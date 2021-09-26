@@ -4,9 +4,16 @@
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean name="/login"
-		class="com.pmq.controller.LoginController" />
+	<bean name="/login" class="com.pmq.controller.LoginController" />
 	<!-- LoginController控制器类，映射到"/register" -->
 	<bean name="/register"
 		class="com.pmq.controller.RegisterController" />
+	
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!--前缀 -->
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<!--后缀 -->
+		<property name="suffix" value=".jsp" />
+	</bean>
 </beans>

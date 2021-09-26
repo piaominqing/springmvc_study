@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	登录页面！
+	未注册的用户，请
+    <a href="${pageContext.request.contextPath }/user/register"> 注册</a>！
+    <br /> 已注册的用户，去
+    <a href="${pageContext.request.contextPath }/user/login"> 登录</a>！
 </body>
 </html>

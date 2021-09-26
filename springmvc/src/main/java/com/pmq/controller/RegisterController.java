@@ -9,7 +9,7 @@ import org.springframework.web.servlet.mvc.Controller;
 public class RegisterController implements Controller {
 
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		return new ModelAndView("/WEB-INF/jsp/login.jsp");
+		return new ModelAndView("login");
 	}
 
 }
