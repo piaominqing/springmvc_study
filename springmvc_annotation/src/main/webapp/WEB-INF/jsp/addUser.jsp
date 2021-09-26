@@ -4,10 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>添加用户</title>
 </head>
 <body>
-	注册页面！
-    注册账号成功，用户名为： ${user.name }
+    <form action="${pageContext.request.contextPath}/converter"
+        method="post">
+        请输入用户信息（格式为编程帮, 18,1.85）:
+        <input type="text" name="user" />
+        <br>
+        <input type="submit" value="提交" />
+    </form>
 </body>
 </html>

@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>文件上传</title>
 </head>
 <body>
-	注册页面！
-    注册账号成功，用户名为： ${user.name }
+    文件描述：${fileDomain.description }
+    <br>
+    <!-- fileDomain.getMyFile().getOriginalFilename()-->
+    文件名称：${fileDomain.myfile.originalFilename }
 </body>
 </html>
